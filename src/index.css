@@ -1,0 +1,32 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+html {
+    line-height: 1.15;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: auto;
+    padding: 40px 120px 40px 120px;
+    background: var(--bg-light);
+}

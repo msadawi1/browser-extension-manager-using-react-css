@@ -1,0 +1,146 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+p {
+  color: hsl(226, 11%, 37%);
+}
+
+button {
+  outline: 2px solid rgba(0, 0, 0, 0%);
+  border: none;
+  cursor: pointer;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+button:focus {
+  outline: 2px solid var(--red-400); 
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --bg-light: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+  --bg-dark: linear-gradient(180deg, #040918 0%, #091540 100%);
+  --red-400: hsl(3, 86%, 64%);
+  --component-bg-light: hsl(200, 60%, 99%);
+  --activated-color: hsl(3, 77%, 44%);
+  --neutral-0: hsl(200, 60%, 99%);
+  --neutral-100: hsl(0, 0%, 93%);
+  --neutral-200: hsl(217, 61%, 90%);
+  --neutral-300: hsl(0, 0%, 78%);
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#tool-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#tool-buttons {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.tool-button {
+  padding: 0.4rem 1.2rem;
+  background-color: var(--neutral-0);
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0px 0.5px 4px rgba(0, 0, 0, 20%);
+  transition: all 0.1s ease-in-out;
+}
+
+.tool-button:focus {
+  background-color: hsl(0, 5%, 96%);
+}
+
+.component {
+  background-color: var(--component-bg-light);
+  box-shadow: 0px 0.5px 4px rgba(0, 0, 0, 20%);
+}
+
+#header {
+  min-width: 100%;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#theme-button {
+  padding: 0.5rem 0.7rem;
+  border-radius: 12px;
+  background-color: var(--neutral-100);
+  transition: all 0.2s ease-in-out;
+}
+
+#theme-button:hover {
+  background-color: var(--neutral-300);
+}
+
+#extension-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-width: 100%;
+  gap: 0.8rem;
+}
+
+.extension-card {
+  display: grid;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 1rem;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: auto 1fr;
+  column-gap: 1rem;
+}
+
+.extension-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.extension-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: span 2;
+}
+
+.extension-remove-button {
+  padding: 0.4rem 0.8rem;
+  border: hsl(0, 0%, 78%) 1px solid;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: var(--component-bg-light);
+  transition: all 0.1s ease-in-out;
+}
+
+.extension-remove-button:hover {
+  color: white;
+  background-color: var(--activated-color);
+}
+
+.extension-remove-button:focus {
+  background-color: var(--neutral-100);
+}
