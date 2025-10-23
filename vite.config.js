@@ -10,5 +10,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: "/browser-extension-manager-using-react-css",
+  base: "/browser-extension-manager-using-react-css/",
 })

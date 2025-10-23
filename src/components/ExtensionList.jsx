@@ -1,6 +1,6 @@
 import ExtensionCard from "./ExtensionCard"
 
-export default function ExtensionList({ list, onRemove, onToggle }) {
+export default function ExtensionList({ list, onRemove, onToggle }) {    
     return (
         <div id="extension-list">
             {list.length > 0 ?
@@ -8,7 +8,7 @@ export default function ExtensionList({ list, onRemove, onToggle }) {
                     <ExtensionCard
                         key={extension.name}
                         name={extension.name}
-                        logoPath={extension.logo}
+                        logo={extension.logo}
                         description={extension.description}
                         isActive={extension.isActive}
                         onRemove={() => onRemove(extension.name)}

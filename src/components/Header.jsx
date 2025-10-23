@@ -5,10 +5,10 @@ export default function Header() {
     return (
         <div id="header" className="component">
             <a href="#">
-                <img src={`/src/assets/images/logo${theme === "dark" ? "-dark" : ""}.svg`} alt="Extensions Logo" />
+                <img src={import.meta.env.BASE_URL+`/assets/images/logo${theme === "dark" ? "-dark" : ""}.svg`} alt="Extensions Logo" />
             </a>
             <button id="theme-button" onClick={toggleTheme}>
-                <img src={`/src/assets/images/icon-${theme === "light" ? "moon" : "sun"}.svg`} alt="Theme Icon" />
+                <img src={import.meta.env.BASE_URL+`/assets/images/icon-${theme === "light" ? "moon" : "sun"}.svg`} alt="Theme Icon" />
             </button>
         </div>
     )

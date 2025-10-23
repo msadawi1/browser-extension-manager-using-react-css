@@ -1,11 +1,11 @@
 import Switch from "react-switch";
 import { useThemeContext } from "../contexts/ThemeContext";
 
-export default function ExtensionCard({ name, logoPath, description, isActive, onRemove, onToggle }) {
+export default function ExtensionCard({ name, logo, description, isActive, onRemove, onToggle }) {    
     const { theme } = useThemeContext();
     return (
         <div className="extension-card component">
-            <img src={`src/${logoPath}`} alt={`${name} Logo`} />
+            <img src={import.meta.env.BASE_URL+logo} alt={`${name} Logo`} />
             <div class="extension-content">
                 <h3>{name}</h3>
                 <p>{description}</p>
