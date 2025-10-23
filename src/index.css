@@ -24,9 +24,9 @@ html {
     font-size: 16px;
 }
 
-body {
+#main {
     min-height: 100vh;
     text-rendering: auto;
-    padding: 40px 120px 40px 120px;
-    background: var(--bg-light);
+    padding: clamp(5px, 5vw, 40px) clamp(5px, 5vw, 120px);
+    background: var(--bg-color);
 }
