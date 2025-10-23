@@ -10,5 +10,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: "/responsive-browser-extension-manager-dashboard-using-react-and-css",
+  base: "/browser-extension-manager-using-react-css",
 })
