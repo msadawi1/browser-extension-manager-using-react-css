@@ -1,8 +1,3 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
 button {
   outline: 2px solid rgba(0, 0, 0, 0%);
   border: none;
@@ -13,10 +8,6 @@ button {
 button:not(:hover):focus {
   outline-offset: 2px;
   outline: 2px solid var(--red-400);
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
 
 :root {
@@ -51,6 +42,16 @@ button:not(:hover):focus {
   --description-color: hsl(0, 0%, 71%);
   --toolbar-btn-bg: hsl(225, 23%, 24%);
   --toolbar-btn-bg-hover: hsl(226, 11%, 37%);
+}
+
+.attribution {
+  color: var(--text-color);
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--red-400);
 }
 
 #main {
