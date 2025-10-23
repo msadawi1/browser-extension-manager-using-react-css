@@ -4,6 +4,7 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
 
 ## Table of contents
 
+- [Installation](#installation)
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
@@ -14,6 +15,31 @@ This is a solution to the [Browser extensions manager UI challenge on Frontend M
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+
+## Installation
+
+Prerequisites:
+- Node.js (v14+ recommended) and npm or Yarn installed.
+
+Quick start (using npm):
+1. Clone the repository
+   - git clone https://github.com/msadawi1/browser-extension-manager-using-react-css.git
+2. Change directory into the challenge
+   - cd browser-extension-manager-using-react-css
+3. Install dependencies
+   - npm install
+4. Start the Vite dev server
+   - npm run dev
+5. Build for production
+   - npm run build
+6. Preview the production build locally
+   - npm run preview
+
+If you prefer Yarn:
+- yarn
+- yarn dev
+- yarn build
+- yarn preview
 
 ## Overview
 
@@ -38,8 +64,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://t.co/ZfJcFFIj9Y)
-- Live Site URL: [Add live site URL here](https://t.co/5Ai57xPW8x)
+- Solution URL: [Frontend Mentor](https://t.co/ZfJcFFIj9Y)
+- Live Site URL: [Website](https://t.co/5Ai57xPW8x)
 
 ## My process
 
