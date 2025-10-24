@@ -29,7 +29,7 @@ html {
 .app {
     min-height: 100vh;
     text-rendering: auto;
-    padding: clamp(5px, 5vw, 40px) clamp(5px, 5vw, 120px);
+    padding: clamp(0.3rem, 5vw, 2.5rem) clamp(0.3, 5vw, 7.5rem);
     background: var(--bg-color);
     display: flex;
     flex-direction: column;
