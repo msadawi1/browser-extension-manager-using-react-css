@@ -80,10 +80,16 @@ Users should be able to:
 
 ### What I learned
 
-Learned to handle CSS Grid better than before, and learned about context provider+custom hook design pattern in React
-
-Learned to create CSS variables (my first time in a frontend project)
-
+Learned to:
+- Handle CSS Grid better than before, and learned about context provider+custom hook design pattern in React
+- Create CSS variables (my first time in a frontend project)
+- Use a mobile-first approach to write cleaner code and better performance on smaller devices.
+- Improve accessiblity (Better hierarchy, labels, and page structure)
+- Always add 'type' attribute to buttons
+- Never use inline style (for better separation of concenrs)
+- Use media query to remove animations for users who enabled reduced animations for their device
+- Use `em` and `rem` in media queries instead of pixels to be compatible with user's prefrences.
+- Remove ID selectors to reduce specificity
 
 ### Continued development
 

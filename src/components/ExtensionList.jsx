@@ -2,7 +2,7 @@ import ExtensionCard from "./ExtensionCard"
 
 export default function ExtensionList({ list, onRemove, onToggle }) {    
     return (
-        <div id="extension-list">
+        <div className="extension-list">
             {list.length > 0 ?
                 list.map(extension =>
                     <ExtensionCard

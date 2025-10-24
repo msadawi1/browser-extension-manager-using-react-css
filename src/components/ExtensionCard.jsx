@@ -6,11 +6,11 @@ export default function ExtensionCard({ name, logo, description, isActive, onRem
     return (
         <div className="extension-card component">
             <img src={import.meta.env.BASE_URL+logo} alt={`${name} Logo`} />
-            <div class="extension-content">
-                <span style={{fontSize: '1.17rem', fontWeight: '700'}}>{name}</span>
+            <div className="extension-content">
+                <span>{name}</span>
                 <p>{description}</p>
             </div>
-            <div class="extension-footer">
+            <div className="extension-footer">
                 <button title="Remove Extension" aria-label="Remove extension" className="extension-remove-button" onClick={onRemove} type="button">
                     Remove
                 </button>

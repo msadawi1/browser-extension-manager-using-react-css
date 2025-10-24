@@ -46,7 +46,7 @@ button:not(:hover):focus-visible {
 
 .attribution {
   color: var(--text-color);
-  font-size: 11px;
+  font-size: 0.7em;
   text-align: center;
 }
 
@@ -54,21 +54,28 @@ button:not(:hover):focus-visible {
   color: var(--red-400);
 }
 
-#content {
+.content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-#tool-bar {
+.tool-bar {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-#tool-buttons {
+@media (min-width: 37.5em) {
+  .tool-bar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.tool-buttons {
   display: flex;
   gap: 0.7rem;
 }
@@ -108,7 +115,7 @@ button:not(:hover):focus-visible {
   box-shadow: 0px 0.5px 4px rgba(0, 0, 0, 20%);
 }
 
-#header {
+.header {
   min-width: 100%;
   border-radius: 1rem;
   padding: 0.8rem;
@@ -117,36 +124,27 @@ button:not(:hover):focus-visible {
   justify-content: space-between;
 }
 
-#theme-button {
+.theme-button {
   padding: 0.5rem 0.7rem;
   border-radius: 12px;
   background-color: var(--theme-btn-bg);
   transition: all 0.2s ease-in-out;
 }
 
-#theme-button:hover {
+.theme-button:hover {
   background-color: var(--theme-btn-bg-hover);
 }
 
-#extension-list {
+.extension-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   min-width: 100%;
   gap: 0.8rem;
 }
 
-@media (max-width: 1024px) {
-  #extension-list {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  #tool-bar {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    justify-content: center;
+@media (min-width: 64em) {
+  .extension-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -163,11 +161,17 @@ button:not(:hover):focus-visible {
 
 .extension-content {
   display: flex;
+  font-size: 1.17rem;
   flex-direction: column;
   gap: 0.5rem;
 }
 
+.extension-content>span {
+  font-weight: 700;
+}
+
 .extension-card p {
+  font-size: 0.85em;
   color: var(--description-color);
 }
 
@@ -199,3 +203,9 @@ button:not(:hover):focus-visible {
   background-color: var(--toolbar-btn-bg-hover);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+  }
+}
