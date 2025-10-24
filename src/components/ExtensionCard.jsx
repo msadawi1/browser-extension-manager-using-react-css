@@ -11,7 +11,7 @@ export default function ExtensionCard({ name, logo, description, isActive, onRem
                 <p>{description}</p>
             </div>
             <div class="extension-footer">
-                <button title="Remove Extension" aria-label="Remove extension" className="extension-remove-button" onClick={onRemove}>
+                <button title="Remove Extension" aria-label="Remove extension" className="extension-remove-button" onClick={onRemove} type="button">
                     Remove
                 </button>
                 <Switch

@@ -27,9 +27,9 @@ export default function Content() {
             <div id="tool-bar">
                 <h1>Extensions List</h1>
                 <div id="tool-buttons">
-                    <button title="All Extensions" aria-label="All extensions" className={`tool-button ${filter === "All" ? "selected" : ""}`} onClick={() => setFilter("All")}>All</button>
-                    <button title="Active Extensions" aria-label="Active extensions" className={`tool-button ${filter === "Active" ? "selected" : ""}`} onClick={() => setFilter("Active")}>Active</button>
-                    <button title="Inactive Extensions" aria-label="Inactive extensions" className={`tool-button ${filter === "Inactive" ? "selected" : ""}`} onClick={() => setFilter("Inactive")}>Inactive</button>
+                    <button title="All Extensions" aria-label="All extensions" type="button" className={`tool-button ${filter === "All" ? "selected" : ""}`} onClick={() => setFilter("All")}>All</button>
+                    <button title="Active Extensions" aria-label="Active extensions" type="button" className={`tool-button ${filter === "Active" ? "selected" : ""}`} onClick={() => setFilter("Active")}>Active</button>
+                    <button title="Inactive Extensions" aria-label="Inactive extensions" type="button" className={`tool-button ${filter === "Inactive" ? "selected" : ""}`} onClick={() => setFilter("Inactive")}>Inactive</button>
                 </div>
             </div>
             <ExtensionList list={filteredExtensions} onRemove={deleteExtension} onToggle={toggleExtension}/>
