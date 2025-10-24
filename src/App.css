@@ -5,7 +5,7 @@ button {
   font-family: 'Noto Sans', sans-serif;
 }
 
-button:not(:hover):focus {
+button:not(:hover):focus-visible {
   outline-offset: 2px;
   outline: 2px solid var(--red-400);
 }
@@ -106,7 +106,7 @@ button:not(:hover):focus {
   opacity: 0.75;
 }
 
-.tool-button:not(.selected):focus {
+.tool-button:not(.selected):focus-visible {
   background-color: var(--toolbar-btn-bg-hover);
 }
 
@@ -202,7 +202,7 @@ button:not(:hover):focus {
   background-color: var(--active-bg);
 }
 
-.extension-remove-button:not(:hover):focus {
+.extension-remove-button:not(:hover):focus-visible {
   background-color: var(--toolbar-btn-bg-hover);
 }
 
