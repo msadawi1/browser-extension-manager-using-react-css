@@ -6,7 +6,7 @@ import { useThemeContext } from "./contexts/ThemeContext";
 
 function App() {
   const { theme } = useThemeContext();
-  return (<div id='app' className={theme === "dark" ? "dark-theme" : ""}>
+  return (<div className={theme === "dark" ? "app dark-theme" : "app"}>
     <Header />
     <Content />
     <Footer />

@@ -46,7 +46,7 @@ button:not(:hover):focus-visible {
 
 .attribution {
   color: var(--text-color);
-  font-size: 0.7em;
+  font-size: clamp(0.6em, 2vw, 1em);
   text-align: center;
 }
 
@@ -90,7 +90,7 @@ button:not(:hover):focus-visible {
   color: var(--text-color);
   outline: 1px solid var(--component-border);
   border-radius: 2rem;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 500;
   box-shadow: 0px 0.5px 4px rgba(0, 0, 0, 20%);
 }
@@ -153,7 +153,7 @@ button:not(:hover):focus-visible {
 .extension-card {
   display: grid;
   border: 1px solid var(--component-border);
-  height: 200px;
+  height: 12.5em;
   padding: 1rem;
   border-radius: 1rem;
   grid-template-rows: 1fr auto;
@@ -161,9 +161,15 @@ button:not(:hover):focus-visible {
   column-gap: 1rem;
 }
 
+.extension-card>img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .extension-content {
   display: flex;
-  font-size: 1.17rem;
+  font-size: clamp(1rem, 3vw, 1.17rem);
   flex-direction: column;
   gap: 0.5rem;
 }
