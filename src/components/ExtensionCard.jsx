@@ -11,10 +11,11 @@ export default function ExtensionCard({ name, logo, description, isActive, onRem
                 <p>{description}</p>
             </div>
             <div class="extension-footer">
-                <button className="extension-remove-button" onClick={onRemove}>
+                <button title="Remove Extension" aria-label="Remove extension" className="extension-remove-button" onClick={onRemove}>
                     Remove
                 </button>
                 <Switch
+                    aria-label="Toggle extension"
                     checked={isActive}
                     onChange={onToggle}
                     onColor={theme === "light" ? "#c7221a" : "#de473f"}
