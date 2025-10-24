@@ -23,7 +23,7 @@ export default function Content() {
         }
     )
     return (
-        <div id="content">
+        <main id="content">
             <div id="tool-bar">
                 <h1>Extensions List</h1>
                 <div id="tool-buttons">
@@ -33,6 +33,6 @@ export default function Content() {
                 </div>
             </div>
             <ExtensionList list={filteredExtensions} onRemove={deleteExtension} onToggle={toggleExtension}/>
-        </div>
+        </main>
     )
 }

@@ -6,10 +6,10 @@ import { useThemeContext } from "./contexts/ThemeContext";
 
 function App() {
   const { theme } = useThemeContext();
-  return (<div id='main' className={theme === "dark" ? "dark-theme" : ""}>
-      <Header />
-      <Content />
-      <Footer />
+  return (<div id='app' className={theme === "dark" ? "dark-theme" : ""}>
+    <Header />
+    <Content />
+    <Footer />
   </div>
   )
 }
