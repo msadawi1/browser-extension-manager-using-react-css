@@ -80,6 +80,10 @@ button:not(:hover):focus-visible {
   gap: 0.7rem;
 }
 
+.transition-01s-einout {
+  transition: all 0.1s ease-in-out;
+}
+
 .tool-button {
   padding: 0.4rem 1.2rem;
   background-color: var(--toolbar-btn-bg);
@@ -89,7 +93,6 @@ button:not(:hover):focus-visible {
   font-size: 1.1rem;
   font-weight: 500;
   box-shadow: 0px 0.5px 4px rgba(0, 0, 0, 20%);
-  transition: all 0.1s ease-in-out;
 }
 
 .selected {
@@ -128,7 +131,6 @@ button:not(:hover):focus-visible {
   padding: 0.5rem 0.7rem;
   border-radius: 12px;
   background-color: var(--theme-btn-bg);
-  transition: all 0.2s ease-in-out;
 }
 
 .theme-button:hover {
@@ -190,7 +192,6 @@ button:not(:hover):focus-visible {
   font-size: 0.9rem;
   font-weight: 500;
   background-color: var(--component-bg);
-  transition: all 0.1s ease-in-out;
 }
 
 .extension-remove-button:hover {
@@ -204,8 +205,8 @@ button:not(:hover):focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0s !important;
-    transition-duration: 0s !important;
+  .transition-01s-einout {
+    animation-duration: 0s;
+    transition-duration: 0s;
   }
 }
